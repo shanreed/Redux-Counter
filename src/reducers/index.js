@@ -9,15 +9,15 @@ const initialState = {
 // of our redux store, along with an action created
 // by our action creator. What does the reducer
 // need to do with the count in each case?
-export default (state = initialState, action) => {
+export default (initialState = 0, action) => {
   switch (action.type) {
     case INCREMENT:
     // Fill in the body of this case
-    return state + 1
+    return initialState + 1
     case DECREMENT:
     // Fill in the body of this case
-    return state -1
+    return initialState -1
     default:
-      return state;
+      return initialState;
   }
 };
